@@ -1,0 +1,16 @@
+id;recommendations;name;risksDescription;generalDescription;technicalDescription;keyWords
+;"Korlátozzák a listázható tartalmak elérését a webkiszolgáló konfigurációinak módosításával.
+Hivatkozások:";TESZT Listázható webtartalmak;Egy támadó a listázható webtartalmakban érzékeny adatokat, konfigurációs állományokat találhat, amelyeket felhasználhat jogosulatlan hozzáférésekhez, vagy további támadásokhoz.;Az XY webszerveren egyes könyvtárak tartalma listázható, az ott tárolt adatok megismerhetõk.;"A listázható tartalmakat a webszerver hibás beállítása okozza, amelynek eredményeként az URL-ben megadott mappák tartalmát a qwebszerver megjeleníti.
+Érintett kiszolgálók és url-ek:
+* URL1
+* URL2
+
+Az alábbi képernyõképen egy listázható webes tartalom látható.
+!SC!";webszerver listázható
+;"Cseréljék az elavult operációs rendszereket gyártó által támogatott verziókra.
+Hivatkozások:
+* https://wiki.debian.org/DebianReleases
+* https://ubuntu.com/about/release-cycle
+";TESZT Nem támogatott Linux operációs rendszer;A nem támogatott operációs rendszerekre a gyártó már nem ad ki biztonsági frissítéseket, így a nyilvánosságra kerülõ sérülékenységeken keresztül támadhatók az adott rendszerek. Felhasználói hozzáférés esetén egy normál alacsony jogú felhasználó könnyen megszerezheti a magas root jogosultságot, amellyel már az egész kiszolgáló felett átveheti az irányítást, minden ott tárolt adathoz hozzáférhet.;A vizsgálat több kiszolgálón elavult Linux operációs rendszereket talált.;"A vizsgálat az alábbi elavult Linux operációs rendszereket találta:
+* IP/host - Linux verzió - EOL dátuma
+* IP/host - Linux verzió - EOL dátuma";linux eol
